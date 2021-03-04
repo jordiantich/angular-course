@@ -1,0 +1,11 @@
+<p>componente1 works!</p>
+
+<ul>
+    <div *ngFor="let a of alumnos">
+
+        <li *ngIf="a.edad>22">
+            {{ a?.nombre}} -{{ a?.apellido}} -{{a.edad}}
+        </li>
+
+    </div>
+</ul>

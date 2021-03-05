@@ -1,10 +1,8 @@
-<p>componente1 works!</p>
-
 <ul>
-    <div *ngFor="let a of alumnos">
+    <div *ngFor="let alumno of alumnos">
 
-        <li *ngIf="a.edad>22">
-            {{ a?.nombre}} -{{ a?.apellido}} -{{a.edad}}
+        <li *ngIf="alumno.nombre.length > 4 ">
+            <app-persona [alumno]="alumno" (mensaje)="recibido($event)"></app-persona>
         </li>
 
     </div>

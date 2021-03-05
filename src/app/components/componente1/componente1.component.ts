@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 export interface Persona {
-  nombre:string;
-  apellido:string;
+  nombre?:string;
+  apellido?:string;
   edad?:number;
 }
 
@@ -15,7 +15,7 @@ export interface Persona {
 
 export class Componente1Component implements OnInit {
 
-  alumnos:any [] = [
+  alumnos:Persona [] = [
 
       {nombre:'Marc',
        apellido:'Estalella',
@@ -30,6 +30,10 @@ export class Componente1Component implements OnInit {
 
   ]
 
+
+  recibido(ev){
+    console.log('EVENTO RECIBIDO DEL HIJO', ev);
+  }
 
   constructor() {
     console.log('implemento constructor');

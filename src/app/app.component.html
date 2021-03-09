@@ -1,7 +1,17 @@
-<p class="red"> Hola{{nombre}} </p>
+<p [routerLink]="['/page1']" (click)="navegarPagina(1)">
+    PAGINA 1
+</p>
+
+<P [routerLink]="['/page2']" click)=" navegarPagina(2) ">
+    PAGINA 2
+</P>
 
 
 
-<app-componente1></app-componente1>
 <router-outlet>
 </router-outlet>
+
+
+<footer>
+    FOOTER
+</footer>

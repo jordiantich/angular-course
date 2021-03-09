@@ -14,6 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { Page1Component } from './pages/page1/page1.component';
+import { Page2Component } from './pages/page2/page2.component';
+import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
 
 const config = {
   apiKey: "AIzaSyBv0JlKlERAEyS_1A_t6O0YZdE90rn4Bhw",
@@ -29,7 +32,10 @@ const config = {
   declarations: [
     AppComponent,
     Componente1Component,
-    PersonaComponent
+    PersonaComponent,
+    Page1Component,
+    Page2Component,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,
